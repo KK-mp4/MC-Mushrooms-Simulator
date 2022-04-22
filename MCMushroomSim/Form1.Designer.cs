@@ -29,6 +29,7 @@ namespace MCMushroomSim
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.glControl1 = new OpenTK.GLControl();
             this.SuspendLayout();
             // 
@@ -41,11 +42,12 @@ namespace MCMushroomSim
             this.glControl1.Location = new System.Drawing.Point(0, 0);
             this.glControl1.Margin = new System.Windows.Forms.Padding(0);
             this.glControl1.Name = "glControl1";
-            this.glControl1.Size = new System.Drawing.Size(778, 494);
+            this.glControl1.Size = new System.Drawing.Size(735, 494);
             this.glControl1.TabIndex = 0;
             this.glControl1.VSync = false;
             this.glControl1.Load += new System.EventHandler(this.glControl1_Load);
             this.glControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.glControl1_Paint);
+            this.glControl1.Resize += new System.EventHandler(this.glControl1_Resize);
             // 
             // Form1
             // 
@@ -55,6 +57,7 @@ namespace MCMushroomSim
             this.ClientSize = new System.Drawing.Size(929, 495);
             this.Controls.Add(this.glControl1);
             this.Font = new System.Drawing.Font("Adobe Clean", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
