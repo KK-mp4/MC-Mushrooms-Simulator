@@ -24,7 +24,9 @@ namespace MCMushroomSim
 
         private void glControl1_Load(object sender, EventArgs e)
         {
-            GL.ClearColor(new Color4(0.192f, 0.192f, 0.192f, 1));
+            comboBox1.SelectedIndex = 0;
+            //GL.ClearColor(new Color4(0.192f, 0.192f, 0.192f, 1));
+            GL.ClearColor(new Color4(0.0823f, 0.0902f, 0.1529f, 1));
             GL.Enable(EnableCap.DepthTest);
             GL.Viewport(0, 0, glControl1.ClientSize.Width, glControl1.ClientSize.Height);
         }
